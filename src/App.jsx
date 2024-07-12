@@ -250,20 +250,20 @@ const App = () => {
               ></audio>
             </div>
             <div className="flex justify-between items-center mt-4">
-              <button className="bg-[#ffffff23] rounded-full w-12 h-12 items-center text-center flex justify-center">
+              <button className="bg-[#ffffff23] rounded-full w-12 h-12 items-center text-center flex justify-center cursor-default">
                 <img src="dots.png" alt="Dots" />
               </button>
               <div className="flex items-center gap-4">
-                <h4 onClick={playPrev}>
+                <h4 className="cursor-pointer" onClick={playPrev}>
                   <img src="prev.png" alt="Prev" />
                 </h4>
-                <h4 onClick={playpa}>
+                <h4 className="cursor-pointer" onClick={playpa}>
                   <img
                     src={`${playing ? "pause.png" : "play.png"}`}
                     alt="Play/Pause"
                   />
                 </h4>
-                <h4 onClick={playNext}>
+                <h4 className="cursor-pointer" onClick={playNext}>
                   <img src="for.png" alt="Forward" />
                 </h4>
               </div>
